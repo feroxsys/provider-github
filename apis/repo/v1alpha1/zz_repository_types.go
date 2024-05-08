@@ -225,7 +225,7 @@ type RepositoryInitParameters struct {
 
 	// Use a template repository to create this resource. See Template Repositories below for details.
 	// Use a template repository to create this resource.
-	Template []TemplateInitParameters `json:"template,omitempty" tf:"template,omitempty"`
+	Template TemplateInitParameters `json:"template,omitempty" tf:"template,omitempty"`
 
 	// The list of topics of the repository.
 	// The list of topics of the repository.
@@ -408,7 +408,7 @@ type RepositoryObservation struct {
 
 	// Use a template repository to create this resource. See Template Repositories below for details.
 	// Use a template repository to create this resource.
-	Template []TemplateObservation `json:"template,omitempty" tf:"template,omitempty"`
+	Template TemplateObservation `json:"template,omitempty" tf:"template,omitempty"`
 
 	// The list of topics of the repository.
 	// The list of topics of the repository.
@@ -582,7 +582,7 @@ type RepositoryParameters struct {
 	// Use a template repository to create this resource. See Template Repositories below for details.
 	// Use a template repository to create this resource.
 	// +kubebuilder:validation:Optional
-	Template []TemplateParameters `json:"template,omitempty" tf:"template,omitempty"`
+	Template TemplateParameters `json:"template,omitempty" tf:"template,omitempty"`
 
 	// The list of topics of the repository.
 	// The list of topics of the repository.
